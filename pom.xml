@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>first.jetty.app</groupId>
+  <artifactId>MyFirstJettyApp</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+    <!-- To write basic javax.websocket against -->
+    <dependency>
+      <groupId>javax.websocket</groupId>
+      <artifactId>javax.websocket-api</artifactId>
+      <version>1.0</version>
+    </dependency>
+    <!-- To run javax.websocket in embedded server -->
+    <!-- https://mvnrepository.com/artifact/org.eclipse.jetty.websocket/javax-websocket-server-impl -->
+	<dependency>
+	    <groupId>org.eclipse.jetty.websocket</groupId>
+	    <artifactId>javax-websocket-server-impl</artifactId>
+	    <version>9.2.7.v20150116</version>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/org.eclipse.jetty.websocket/javax-websocket-client-impl -->
+	<dependency>
+	    <groupId>org.eclipse.jetty.websocket</groupId>
+	    <artifactId>javax-websocket-client-impl</artifactId>
+	    <version>9.2.7.v20150116</version>
+	</dependency>
+
+  </dependencies>
+  
+</project>
